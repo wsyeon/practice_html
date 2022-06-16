@@ -1,0 +1,22 @@
+body {
+    background: #eee;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color:blue;
+    text-shadow: 3px 3px 5px #444;
+}
+h3 {
+    text-align: end;
+    font-weight: normal;
+    color:#666;
+}
+p {
+    line-height: 180%;
+    font-size: 18px;
+}
+span {
+    font-weight: bold;
+}

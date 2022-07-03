@@ -1,0 +1,22 @@
+* {margin: 0px; padding: 0px;}
+body {
+    width: 500px;
+}
+h3 {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.col1 {
+    width: 120px;
+}
+.col2 {
+    width: 250px;
+    height: 28px;
+}
+form {
+    margin: 20px;
+}
+button {
+    border-top: 1px solid #eee;
+}

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+section {
+    height: 250px;
+    background-color: #1b9c9e;
+    color: #fff;
+}
+#sitemap {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+#sitemap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.items {
+    float: left;
+    margin: 50px 40px;
+}
+.items li {
+    margin-top: 10px;
+}

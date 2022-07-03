@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/col.css" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style-type: none;
+        }
+        header {
+            height: 80px;
+            padding: 30px 0 0 30px;
+            color: #fff;
+            background-color: #33b30b;
+        }
+        .row {
+            margin-top: 10px;
+        }
+        .row:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .menu li {
+            padding: 10px;
+            margin-bottom: 12px;
+            background-color: #3ea3d9;
+            color: #fff;
+        }
+        .menu a:link, menu a:visited, menu a:hover, menu a:active {
+            color: #fff;
+            text-decoration: none;
+        }
+        .menu li:hover {
+            background-color: orange;
+        } 
+        section p {
+            line-height: 150%;
+            padding-top: 10px;
+        }
+        footer {
+            height: 80px;
+            background-color: #eee;
+            text-align: center;
+            font-size: 0.9em;
+            padding-top: 30px;
+            margin-top: 10px;
+        }
+        @media only screen and (max-width: 768px) {
+            [class*="col_"] {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>웹 프로그래밍 강좌</h3>
+    </header>
+    <div class="row">
+        <nav class="col_3 menu">
+            <ul>
+                <li><a href="#">웹 페이지란?</a></li>
+                <li><a href="#">HTML/CSS</a></li>
+                <li><a href="#">PHP 프로그래밍</a></li>
+                <li><a href="#">자바스크립트/JQuery</a></li>
+            </ul>
+        </nav>
+        <section class="col_9">
+            <h2>웹 페이지란?</h2>
+            <p>웹 페이지는 웹 서핑을 할 때 보는 각각의 화면을 말한다. 웹 페이지는 HTML과 CSS로 구성된 HTML 문서와 관련된 이미지, 동영상, 음악 파일 등의 데이터 파일로 구성된다.
+            </p>
+            <p>웹 브라우저는 웹 서버에서 보내온 웹 페이지에 관련된 파일들을 해석하여 브라우저 화면에 내용을 보여준다.</p>
+        </section>
+    </div>
+    <footer>
+        <p>Copyright 2021. (goldmont) all rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 10px;
+            height: 1000px;
+            background-color: green;
+        }
+        #box_fixed {
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            width: 400px;
+            height: 200px;
+            border: 1px solid #ff0000;
+        }
+        #a {
+            position:fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #ff0000;
+            padding: 10px 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>위치 지정(position : fixed)</h3>
+    <div id="box"></div>
+    <div id="box_fixed">
+        <div id="a">요소 A</div>
+    </div>
+</body>
+</html>

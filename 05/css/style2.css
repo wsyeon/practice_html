@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+}
+div {
+    width: 300px;
+    border: 2px solid #aaa;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px auto;
+}
+h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+}
+p {
+    line-height: 180%;
+    border-bottom: 1px dotted #ccc;
+    padding: 10px 0px;
+}
+h4 {
+    font-weight: normal;
+    margin-top: 10px;
+    text-align: end;
+}
+a :hover {
+    color: orange;
+}

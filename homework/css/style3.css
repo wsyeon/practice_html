@@ -1,0 +1,49 @@
+h2 {
+    width: 200px;
+    margin: 10px auto;
+}
+#box {
+    position: relative;
+    width: 650px;
+    height: 520px;
+    margin: 20px auto;
+    background-color: green;
+}
+#box div {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background-color: yellow;
+    box-shadow: 3px 3px 10px #fff;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+#box a {
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+#box a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+#menu1 {
+    left: 280px;  top: 80px;
+}
+#menu2 {
+    left: 140px;  top: 140px;
+}
+#menu3 {
+    left: 420px;  top: 140px;
+}
+#menu4 {
+    left: 140px;  top: 280px;
+}
+#menu5 {
+    left: 420px;  top: 280px;
+}
+#menu6 {
+    left: 280px;  top: 350px;
+}

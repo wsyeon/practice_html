@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #wrap {
+            width: 90%;
+            height: 250px;
+            margin: 0 auto;
+            border: 1px solid red;
+        }
+        #a {
+            float: left;
+            width: 300px;
+            height: 150px;
+            background-color: yellow;   
+        }
+        #b {
+            float: left;
+            width: calc(100% - 300px);
+            height: 150px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="a">요소 A</div>
+        <div id="b">요소 B</div>
+    </div>
+</body>
+</html>

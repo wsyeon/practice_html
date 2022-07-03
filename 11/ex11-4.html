@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/col.css" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            padding: 20px;
+            border-bottom: 1px solid #000;
+        }
+        img {
+            max-width: 100%;
+        }
+        nav {
+           float: left; 
+           width: 20%;
+           padding: 15px;
+        }
+        section {
+            float: left;
+            width: 80%;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+            }
+            section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>포토 갤러리</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>작품 사진 1</li>
+            <li>작품 사진 2</li>
+            <li>작품 사진 3</li>
+            <li>작품 사진 4</li>
+        </ul>
+    </nav>
+    <section>
+        <h3>작품 사진 1</h3>
+        <div>
+            <img src="img/image2.jpg" />
+        </div>
+    </section>
+</body>
+</html>

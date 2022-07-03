@@ -1,0 +1,302 @@
+header {
+    height: 166px;
+    /* border: 1px solid #ff0000; */
+}
+.box {
+    position: relative;
+    width: 1100px;
+    margin: 0px auto;
+    /* border: 1px solid blue; */
+}
+.box:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Header영역 */
+#logo {
+    float: left;
+    margin: 80px 0 0 60px;
+}
+#menu {
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+}
+#menu li {
+    display: inline-block;
+}
+#top_menu li{
+    margin: 30px 0 0 10px;
+}
+#main_menu li {
+    margin: 50px 0 0 80px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/* main 영역 */
+#main_image {
+    height: 312px;
+    background: url('../img/main_bg.png') no-repeat top center;
+    /* border: 1px solid #ff0000; */
+}
+#main_image .box {
+    height: 100%;
+}
+#main_image .btn_class {
+    position: absolute;
+    right: 104px;
+    bottom: 43px;
+}
+/* 사이드바 */
+aside {
+    float: left;
+    width: 220px;
+    height: 605px;
+    /* border: 1px solid #ff0000; */
+}
+#main {
+    float: right;
+    width: 840px;
+    height: 605px;
+    /* border: 1px solid #ff0000; */
+}
+aside .title1 {
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #0ca9a3;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+}
+aside .comment {
+    padding: 20px 10px;
+    text-align: left;
+    line-height: 150%;
+    font-size: 18px;
+}
+aside .search input {
+    width: 160px;
+    height: 32px;
+    padding: 0;
+    border: 1px solid #000;
+    vertical-align: top;
+}
+aside .search button {
+    width: 50px;
+    height: 32px;
+    padding: 6px 10px;
+    border: 1px solid #000;
+}
+aside .title2 {
+    margin-top: 20px;
+    padding: 15px;
+    height: 50px;
+    text-align: left;
+    font-weight: bold;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #ccc;
+}
+aside .making {
+    height: 175px;
+}
+aside .list {
+    margin: 25px 0;
+}
+aside .list li {
+    text-align: left;
+    margin: 15px 12px;
+}
+aside .reply {
+    height: 150px;
+    padding: 12px;
+    border: 1px solid #0ca9a3;
+}
+aside .reply h2 {
+    font-size: 18px;
+    margin: 10px 0 15px;
+    font-weight: bold;
+    text-align: left;
+}
+aside .reply li {
+    margin-top: 6px;
+    text-align: left;
+}
+/* main_section */
+#main1 {
+    float: left;
+    width: 406px;
+    height: 486px;
+}
+section #notice .title1 {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+section .title2 {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+#blank {
+    height: 32px;
+}
+section #notice {
+    height: 220px;
+    /* border: 1px solid red; */
+}
+section #notice2 {
+    height: 220px;
+    margin-top: 39px;
+    /* border: 1px solid red; */
+}
+#notice .items {
+    padding-bottom: 18px;
+}
+#notice .subject {
+    float: left;
+}
+#notice .date {
+    float: right;
+}
+#notice .items::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#notice2 .items {
+    padding-bottom: 18px;
+}
+#notice2 .subject {
+    float: left;
+}
+#notice2 .date {
+    float: right;
+}
+#notice2 .items::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+#main2 {
+    float: right;
+    width: 399px;
+    height: 480px;
+    /* border: 1px solid red; */
+}
+#main2 .title1 {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+    border-bottom: 1px solid #000;
+}
+.item1 {
+    float: left;
+    text-align: left;
+}
+.item2 {
+    float: right;
+    text-align: left;
+}
+#main2 img {
+    width: 187px;
+    height: 154px;
+    padding-top: 32px;
+}
+#main2 .subject {
+    padding-top: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#main2 .date {
+    padding-top: 12px;
+}
+/*footer 영역*/
+footer {
+    height: 260px;
+    /* border: 1px solid #ff0000; */
+    background-color: #05354e;
+    color: #fff;
+}
+#info_top {
+    height: 39px;
+    margin-left: 260px;
+    /* border: 1px solid red; */
+}
+.info {
+    float: left;
+    display: inline-block;
+    margin-right: 60px;
+    padding-top: 23px;
+    font-weight: bold;
+}
+/* #info_bottom::after {
+    display: block;
+    content: "";
+    clear: both;
+} */
+#info_bottom {
+    position: relative;
+    width: 909px;
+    height: 175px;
+    /* border: 1px solid red; */
+    margin-left: 260px;
+    margin-top: 47px;
+}
+#info1 {
+    float: left;
+    width: 247.5px;
+    height: 175px;
+    /* border: 1px solid red; */
+}
+.color_text {
+    color: #0ca9a3;
+    font-size: 18px;
+    font-weight: bold;
+}
+#phone {
+    padding-top:27px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#info1 .text {
+    padding-top: 15px;
+}
+#info2 {
+    width: 265px;
+    height: 175px;
+    margin-left: 362px;
+    /* border: 1px solid red; */
+}
+#info2 .text {
+    padding-bottom: 10px;
+}
+#first_text {
+    margin-top: 22.5px;
+    padding-bottom: 10px;
+}
+#info3 {
+    position: absolute;
+    left: 752px;
+    bottom: 0px;
+    width: 157.5px;
+    height: 175px;
+    /* border: 1px solid red; */
+}
+#accountnumber {
+    margin-top: 22.5px;
+    padding-bottom: 10px;
+}
+#info3 .text {
+    padding-bottom: 10px;
+}

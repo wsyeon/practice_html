@@ -1,0 +1,30 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    margin: 40px 0px 30px
+}
+.product {
+    width: 500px;
+    padding-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.product li {
+    padding: 10px 20px;
+}
+.product-image {
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.product-image img {
+    width: 400px;
+}
+li.product-title {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.product-review span {
+    color: orange;
+}

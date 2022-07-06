@@ -48,6 +48,10 @@ i .sub-banner-text {
   font-weight: bold;
   color: #2b2b2b;
 }
+/* 글씨가 작은 경우 */
+.lnb_small li a {
+  font-size: 16px;
+}
 .lnb nav ul li {
   margin-top: 30px;
   font-size: 1.2rem;
@@ -200,7 +204,15 @@ i .sub-banner-text {
 .scs-item:after{content:"";display: block;clear: both;}
 .scs-item img{float:left;margin-right: 15px;}
 .scs-item h4 {color:#fd9f27;}
-.scs-item p {margin-top:15px;color:#868e96;font-size: 14px;}
+.scs-item p {margin-top:15px;color:#868e96;font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  height: 58px;
+}
 
 .exam_standard a {
   text-decoration: underline;
@@ -448,27 +460,174 @@ h3 + .text_warning {margin-top: 60px}
   padding:14px 24px;
 }
 
-/* 합격수기 상세 */
-.scs_story_detail .prog_name {
-  padding: 20px 0 20px 22px;
+/* no-bdr가 아닌 경우 */
+.scs_story_detail .bdr{
+  padding:20px 0 20px 22px;
+  margin-top: 20px;
   border-top: 1px solid #2b2b2b;
   border-bottom: 1px solid #dee2e6;
   background-color: #f8f9fa;
 }
-.scs_story_detail span:first-of-type {
-  color: #4dabf7;
-  font-size: 14px;
+
+/* pagination이 가운데가 아닐경우 */
+.center_pagination {
+  margin: 0 auto;
+  margin-right: 180px;
 }
-.scs_story_detail .prog_name .txt {
-  margin-left: 15px;
-}
-.scs_story_detail .prog_name .info {
-  padding: 14px 0 14px 2px;
-}
-.scs_story_detail .prog_name .info img {
+.center_pagination a {
+  color: black;
   float: left;
+  width:30px;
+  height:30px;
+  line-height:27px;
+  margin-top: 40px;
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  border:1px solid #dee2e6;
+  font-size: 14px;
+  color:#adb5bd;
+}
+.center_pagination .active,.pagination a:hover{
+  background-color: #033263;
+  color:#fff;
+  border:0;
+}
+.center_pagination .btn{background:no-repeat center;}
+.center_pagination .btn.prev{margin-right: 5px;background-image: url('../images/common/ico_arrow_prev.png');}
+.center_pagination .btn.next{margin-left: 10px; background-image: url('../images/common/ico_arrow_next.png');}
+
+/* 공지사항 내용 */
+.scs_story_detail .notice_list {
+  margin-top: 30px;
+  text-align: center;
+}
+.scs_story_detail .notice_list .notice_bgc {
+  background-color: orange;
+  border-radius: 20px;
+  color: #fff;
+  padding: 2px 9px;
+}
+.scs_story_detail .notice_list span {
+  text-align: center;
+  margin-left: 15px;
+  font-size: 12px;
+}
+.scs_story_detail .notice_list a {
+  display: block;
+  width:430px;
+  text-decoration: none;
+  color: #000;
+  text-overflow: ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.scs_story_detail .notice_list td:nth-child(2) {
+  text-align: left;
+}
+.scs_story_detail .notice_list th{
+  padding: 5px 20px 5px;
+  font-size: 14px;
+  font-weight: 800x;
+}
+.scs_story_detail .notice_list td{
+  padding: 10px 20px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #dee2e6;
+}
+.scs_story_detail .notice_search {
+  margin-top: 40px;
+  padding-left: 120px;
+}
+.scs_story_detail .notice_search li {
+  display: inline-table;
+}
+.scs_story_detail .notice_search input, select, button {
+  height: 35px;
+}
+.scs_story_detail select {
+  width: 100px;
+}
+.scs_story_detail button {
+  width: 80px;
+  border: 1px solid #000;
+  background-color: #033263;
+  color: #fff;
+}
+.scs_story_detail input {
+  width: 260px;
+}
+
+/* 공지사항 세부 내용 */
+.scs_story_detail .notice_title{
+  padding:20px 0 20px 22px;
+  margin-top: 40px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+}
+.scs_story_detail .notice_date {
+  color: #888;
+  font-size: 0.8em;
+  border-bottom: 1px solid #dee2e6;
+}
+.scs_story_detail .notice_date li {
+  display: inline-table;
+  padding: 10px 0 15px 20px;
+}
+.scs_story_detail .notice_txt {
+  font-size: 15px;
+  border-bottom: 1px solid #dee2e6;
+}
+.scs_story_detail .notice_txt p {
+  padding: 20px 95px 0 20px;
+  line-height: 1.5;
+}
+.scs_story_detail .notice_txt p:last-child {
+  padding-bottom: 20px;
+}
+.scs_story_detail .btn_go_list {
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin: 50px auto 0;
+  padding: 10px 0;
+  border: none;
+  font-size: 1em;
+  background-color: #033263;
+  color: #fff;
+}
+
+/* 합격수기 상세 */
+.scs_story_detail .prog_name{
+  padding:20px 0 20px 22px;
+  border-top: 1px solid #2b2b2b;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+}
+.scs_story_detail span:first-of-type{
+  color:#4dabf7;
+  font-size: 14px;
   margin-right: 15px;
 }
+.scs_story_detail .prog_name .txt{
+  margin-left: 15px;
+}
+.scs_story_detail .info{position: relative; height:170px;padding:14px 0 14px 148px;font-size: 13px;color:#868e96;border-bottom: 1px solid #eaeaea;}
+.scs_story_detail .info img{position: absolute;left:2px;top:14px;}
+.scs_story_detail .info .top{float: left;padding:13px 0;border-bottom: 1px solid #eaeaea;}
+.scs_story_detail .info .top li{
+  display: inline-block;
+  line-height: 15px;
+}
+.scs_story_detail .info .top li:nth-child(2){
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #eaeaea;
+}
+.scs_story_detail .info .btm{float: left;display:flex;padding-top: 13px;line-height: 21px;}
+.scs_story_detail .content p{color:#2b2b2b;font-size: 15px;}
+.scs_story_detail .content .number{margin:40px 0 20px;}
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width: 480px) and (max-width: 1023px) {
@@ -795,4 +954,5 @@ h3 + .text_warning {margin-top: 60px}
   .pass_announce .result_box .comment {
     padding: 0 25px;
   }
+  .scs-item{margin:-5px;}
 }
